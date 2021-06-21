@@ -44,8 +44,7 @@ return [
         'Tables' => [
             'Basic' => 'tables.basic',
             'Striped' => 'tables.striped',
-            'With actions' => 'tables.actions',
-            'Overflow' => 'tables.overflow'
+            'With actions' => 'tables.actions'
         ],
         'Tabs' => [
             'Pills' => 'tabs.pills',

@@ -1,32 +1,30 @@
 @extends('_layouts.main')
 
 @section('body')
-    <div class="space-y-8">
-        @foreach($page->components as $name => $components)
-            <section id="{{ \Illuminate\Support\Str::lower($name) }}" class="space-y-8">
-                <div class="flex items-center space-x-2">
-                    <h2 class="text-2xl font-medium text-gray-700">{{ $name }}</h2>
-                    <a class="text-2xl text-blue-500 hover:text-blue-700 hover:underline focus:text-blue-700 focus:underline" href="#{{ \Illuminate\Support\Str::lower($name) }}">#</a>
-                </div>
-                
-                <div class="space-y-8">
-                    @if(is_bool($components) && !$components)
-                        <h3 class="text-lg font-medium">Coming soon...</h3>
-                    @else
-                        @foreach($components as $label => $view)
-                            <div class="space-y-2">
-                                <div class="flex items-center justify-between space-x-4">
-                                    <h3 class="text-lg font-medium">{{ $label }}</h3>
-                                    <x-link href="https://github.com/ryangjchandler/tinywind/tree/main/source/_components/{{ str_replace('.', '/', $view) }}.blade.php" class="text-sm font-bold uppercase">
-                                        View source
-                                    </x-link>
-                                </div>
-                                @include('_components.' . $view)
-                            </div>
-                        @endforeach
-                    @endif
-                </div>
-            </section>
-        @endforeach
-    </div>
+    <section id="index" class="max-w-xl space-y-8">
+        <a href="/pages/about" class="block">
+            <div class="flex items-center justify-between px-6 py-4 border border-gray-300 rounded-md hover:border-gray-500">
+                <h3 class="text-lg font-medium">Learn more about Tinywind</h3>
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.75 8.75L14.25 12L10.75 15.25"></path>
+                </svg>
+            </div>
+        </a>
+        <a href="/components" class="block">
+            <div class="flex items-center justify-between px-6 py-4 border border-gray-300 rounded-md hover:border-gray-500">
+                <h3 class="text-lg font-medium">Browse the components</h3>
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.75 8.75L14.25 12L10.75 15.25"></path>
+                </svg>
+            </div>
+        </a>
+        <a href="/components" class="block">
+            <div class="flex items-center justify-between px-6 py-4 border border-gray-300 rounded-md hover:border-gray-500">
+                <h3 class="text-lg font-medium">Read the changelog</h3>
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.75 8.75L14.25 12L10.75 15.25"></path>
+                </svg>
+            </div>
+        </a>
+    </section>
 @endsection

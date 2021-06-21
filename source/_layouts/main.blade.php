@@ -10,11 +10,13 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script src="{{ mix('js/main.js', 'assets/build') }}" defer></script>
     </head>
-    <body class="flex flex-col h-full min-h-screen p-16 font-sans antialiased text-gray-900 min-w-screen">
+    <body class="flex flex-col h-full min-h-screen p-8 font-sans antialiased text-gray-900 md:p-16 min-w-screen">
         @include('_layouts.banner')
         
-        <header class="mt-16 mb-16 space-y-4 md:mt-8">
-            <h1 class="text-3xl font-bold">Tinywind</h1>
+        <header class="mt-16 mb-8 space-y-4 md:mb-16 md:mt-8">
+            <a href="/" class="hover:underline focus:underline">
+                <h1 class="text-3xl font-bold">Tinywind</h1>
+            </a>
             <p>A small collection of free Tailwind components.</p>
 
             <nav class="flex items-center space-x-4">
@@ -28,7 +30,7 @@
             @yield('body')
         </main>
 
-        <footer class="mt-16 space-x-4">
+        <footer class="mt-8 space-x-4 md:mt-16">
             <x-link href="https://github.com/ryangjchandler/tinywind" target="_blank">GitHub</x-link>
             <x-link href="https://github.com/sponsors/ryangjchandler" target="_blank">Sponsor development</x-link>
         </footer>

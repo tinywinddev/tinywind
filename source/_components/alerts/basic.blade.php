@@ -6,7 +6,7 @@
         
         <button
             type="button"
-            class="inline-flex bg-gray-50 rounded-md p-1.5 text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-gray-600 -mx-1.5 -my-1.5"
+            class="ml-1.5 inline-flex bg-gray-50 rounded-md p-1.5 text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-gray-600 -mx-1.5 -my-1.5"
         >
             <span class="sr-only">Close</span>
             <!-- Iconic: close -->
