@@ -35,6 +35,9 @@ return [
             'With actions' => 'tables.actions',
             'Overflow' => 'tables.overflow'
         ],
+        'Blog posts' => [
+            'Card' => 'blogs.card',
+        ]
     ]
 
 ];
