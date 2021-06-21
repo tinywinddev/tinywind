@@ -1,5 +1,5 @@
 ## Changelog
 
-### v0.1.0
+### v0.1.0 - 2021-06-22
 
 * Initial release. 🚀
