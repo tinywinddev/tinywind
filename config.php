@@ -35,6 +35,10 @@ return [
         'Stars' => [
             'Basic' => 'stars.basic',
         ],
+        'Stats' => [
+            'Basic' => 'stats.basic',
+            'With icon' => 'stats.icon',
+        ],
         'Tables' => [
             'Basic' => 'tables.basic',
             'Striped' => 'tables.striped',
