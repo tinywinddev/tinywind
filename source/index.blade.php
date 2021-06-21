@@ -4,7 +4,11 @@
     <div class="space-y-8">
         @foreach($page->components as $name => $components)
             <section id="{{ \Illuminate\Support\Str::lower($name) }}" class="space-y-8">
-                <h2 class="text-2xl font-medium text-gray-700">{{ $name }}</h2>
+                <div class="flex items-center space-x-2">
+                    <h2 class="text-2xl font-medium text-gray-700">{{ $name }}</h2>
+                    <a class="text-2xl text-blue-500 hover:text-blue-700 hover:underline focus:text-blue-700 focus:underline" href="#{{ \Illuminate\Support\Str::lower($name) }}">#</a>
+                </div>
+                
                 <div class="space-y-8">
                     @if(is_bool($components) && !$components)
                         <h3 class="text-lg font-medium">Coming soon...</h3>
