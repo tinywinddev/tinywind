@@ -32,7 +32,8 @@ return [
         'Tables' => [
             'Basic' => 'tables.basic',
             'Striped' => 'tables.striped',
-        ]
+            'With actions' => 'tables.actions',
+        ],
     ]
 
 ];
