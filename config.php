@@ -33,6 +33,7 @@ return [
             'Basic' => 'tables.basic',
             'Striped' => 'tables.striped',
             'With actions' => 'tables.actions',
+            'Overflow' => 'tables.overflow'
         ],
     ]
 
