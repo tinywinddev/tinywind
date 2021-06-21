@@ -6,5 +6,5 @@
         <p class="block text-3xl font-semibold text-gray-900">86,400</p>
     </div>
     
-    <small class="inline-block text-gray-400">Down 21% from last week</small>
+    <small class="inline-block text-red-500">Down 21% from last week</small>
 </div>
