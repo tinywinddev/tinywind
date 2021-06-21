@@ -8,7 +8,7 @@
     </div>
 
     <div class="flex-1">
-        <div class="px-6 py-4 space-y-2">
+        <div class="p-6 space-y-2">
             <a
                 href="#"
                 class="text-xl font-medium text-blue-500 hover:text-blue-600 focus:text-blue-600 hover:underline focus:underline"

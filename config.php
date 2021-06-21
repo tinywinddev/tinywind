@@ -28,6 +28,9 @@ return [
             'Icons' => 'buttons.icons',
             'Three dimensional' => 'buttons.3d'
         ],
+        'Blog posts' => [
+            'Card' => 'blogs.card',
+        ],
         'Maps' => false,
         'Tables' => [
             'Basic' => 'tables.basic',
@@ -35,9 +38,9 @@ return [
             'With actions' => 'tables.actions',
             'Overflow' => 'tables.overflow'
         ],
-        'Blog posts' => [
-            'Card' => 'blogs.card',
-        ]
+        'Tabs' => [
+            'Pills' => 'tabs.pills',
+        ],
     ]
 
 ];
