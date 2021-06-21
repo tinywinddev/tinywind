@@ -10,7 +10,9 @@ return [
 
     'description' => 'A small collection of free Tailwind components.',
 
-    'collections' => [],
+    'collections' => [
+        'pages',
+    ],
 
     'components' => [
         'Alerts' => [

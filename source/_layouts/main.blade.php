@@ -16,6 +16,12 @@
         <header class="mt-16 mb-16 space-y-4 md:mt-8">
             <h1 class="text-3xl font-bold">Tinywind</h1>
             <p>A small collection of free Tailwind components.</p>
+
+            <nav class="flex items-center space-x-4">
+                <x-link href="/pages/about">About</x-link>
+                <x-link href="/components">Components</x-link>
+                <x-link href="/pages/changelog">Changelog</x-link>
+            </nav>
         </header>
 
         <main class="flex-1">

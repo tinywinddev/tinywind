@@ -1,6 +1,7 @@
 <?php
 
 use TightenCo\Jigsaw\Jigsaw;
+use TightenCo\Jigsaw\Parsers\JigsawMarkdownParser;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
@@ -15,3 +16,11 @@ use TightenCo\Jigsaw\Jigsaw;
  *     // Your code here
  * });
  */
+
+function changelog() {
+    $path = __DIR__.'/CHANGELOG.md';
+
+    return (new JigsawMarkdownParser)->parse(
+        file_get_contents($path)
+    );
+}
