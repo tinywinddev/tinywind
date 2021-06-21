@@ -7,4 +7,11 @@ Alpine.data('tabs', () => ({
     }
 }))
 
+Alpine.data('stars', () => ({
+    count: 1,
+    setCount(count) {
+        this.count = count
+    }
+}))
+
 Alpine.start()

@@ -7,11 +7,12 @@
         "prod": "mix --production"
     },
     "devDependencies": {
+        "@tailwindcss/forms": "^0.3.3",
         "alpinejs": "^3.1.0",
         "laravel-mix": "^6.0.10",
         "laravel-mix-jigsaw": "^1.5.0",
         "postcss": "^8.2.4",
         "postcss-import": "^14.0.0",
-        "tailwindcss": "^2.0.2"
+        "tailwindcss": "^2.0"
     }
 }

@@ -3090,6 +3090,14 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.data('tabs', function () {
     }
   };
 });
+alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.data('stars', function () {
+  return {
+    count: 1,
+    setCount: function setCount(count) {
+      this.count = count;
+    }
+  };
+});
 alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.start();
 
 /***/ }),

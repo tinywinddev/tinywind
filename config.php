@@ -32,6 +32,9 @@ return [
             'Card' => 'blogs.card',
         ],
         'Maps' => false,
+        'Stars' => [
+            'Basic' => 'stars.basic',
+        ],
         'Tables' => [
             'Basic' => 'tables.basic',
             'Striped' => 'tables.striped',

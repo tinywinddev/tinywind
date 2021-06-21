@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: ["source/**/*.blade.php", "source/**/*.md", "source/**/*.html"],
   theme: {
     extend: {},
@@ -6,5 +7,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 };
