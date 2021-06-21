@@ -22,6 +22,7 @@
             <nav class="flex items-center space-x-4">
                 <x-link href="/pages/about">About</x-link>
                 <x-link href="/components">Components</x-link>
+                <x-link href="/pages/documentation">Documentation</x-link>
                 <x-link href="/pages/changelog">Changelog</x-link>
             </nav>
         </header>
