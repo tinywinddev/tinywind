@@ -7,7 +7,7 @@
         <meta name="description" content="{{ $page->description }}">
         <title>{{ $page->title }}</title>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-        <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        <script src="{{ mix('js/main.js', 'assets/build') }}" defer></script>
     </head>
     <body class="flex flex-col h-full min-h-screen p-16 font-sans antialiased text-gray-900 min-w-screen">
         @include('_layouts.banner')
