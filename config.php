@@ -29,6 +29,10 @@ return [
             'Three dimensional' => 'buttons.3d'
         ],
         'Maps' => false,
+        'Tables' => [
+            'Basic' => 'tables.basic',
+            'Striped' => 'tables.striped',
+        ]
     ]
 
 ];
