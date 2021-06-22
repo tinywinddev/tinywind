@@ -10,6 +10,8 @@
     </div>
     <input
         type="text"
+        id="name"
+        name="name"
         class="block w-full outline-none focus:outline-black focus:shadow-none focus:ring-0"
         aria-required="false"
     >
