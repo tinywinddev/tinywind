@@ -3,8 +3,8 @@
 use TightenCo\Jigsaw\Jigsaw;
 use TightenCo\Jigsaw\Parsers\JigsawMarkdownParser;
 
-/** @var $container \Illuminate\Container\Container */
-/** @var $events \TightenCo\Jigsaw\Events\EventBus */
+/** @var \Illuminate\Container\Container $container */
+/** @var \TightenCo\Jigsaw\Events\EventBus $events */
 
 /**
  * You can run custom code at different stages of the build process by
@@ -24,3 +24,5 @@ function changelog() {
         file_get_contents($path)
     );
 }
+
+$events->afterBuild(App\Listeners\GenerateSitemap::class);
