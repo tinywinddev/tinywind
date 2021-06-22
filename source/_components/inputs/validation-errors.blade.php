@@ -13,6 +13,7 @@
         aria-required="true"
         aria-invalid="true"
         aria-describedby="name-error"
+        value="info@tinywind.dev"
         required
     >
     <p id="name-error" class="font-medium text-red-600">
