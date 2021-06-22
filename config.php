@@ -36,6 +36,14 @@ return [
         'Blog posts' => [
             'Card' => 'blogs.card',
         ],
+        'Inputs' => [
+            'Basic' => 'inputs.basic',
+            'With help' => 'inputs.with-help',
+            'Optional' => 'inputs.optional',
+            'Validation errors' => 'inputs.validation-errors',
+            'Checkbox group' => 'inputs.checkbox',
+            'Radio group' => 'inputs.radio-group',
+        ],
         'Maps' => false,
         'Stars' => [
             'Basic' => 'stars.basic',
