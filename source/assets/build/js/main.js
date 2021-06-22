@@ -3081,6 +3081,8 @@ var module_default = src_default;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.data('tabs', function () {
   return {
@@ -3098,6 +3100,95 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.data('stars', function () {
     }
   };
 });
+alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.data('accordion', function () {
+  return {
+    active: 'general',
+    headers: [],
+    init: function init() {
+      this.$el.dataset.accordion = true;
+    },
+    header: function header(id) {
+      var _ref;
+
+      return _ref = {}, _defineProperty(_ref, 'x-bind:aria-expanded', function xBindAriaExpanded() {
+        if (!this.headers.includes(id)) {
+          this.headers.push(id);
+        }
+
+        return JSON.stringify(this.active === id);
+      }), _defineProperty(_ref, 'x-bind:aria-controls', function xBindAriaControls() {
+        return id;
+      }), _defineProperty(_ref, 'x-on:click.prevent', function xOnClickPrevent() {
+        this.toggle(id);
+      }), _defineProperty(_ref, 'x-on:keydown.space.prevent', function xOnKeydownSpacePrevent() {
+        this.toggle(id);
+      }), _defineProperty(_ref, 'x-on:keydown.enter.prevent', function xOnKeydownEnterPrevent() {
+        this.toggle(id);
+      }), _defineProperty(_ref, 'x-on:keydown.arrow-up.prevent', function xOnKeydownArrowUpPrevent() {
+        this.focusPreviousHeader(id);
+      }), _defineProperty(_ref, 'x-on:keydown.arrow-down.prevent', function xOnKeydownArrowDownPrevent() {
+        this.focusNextHeader(id);
+      }), _defineProperty(_ref, 'x-bind:id', function xBindId() {
+        return "accordion_header_".concat(id);
+      }), _defineProperty(_ref, 'x-bind:data-focus', function xBindDataFocus() {
+        return id;
+      }), _ref;
+    },
+    headerIcon: function headerIcon(id) {
+      return _defineProperty({}, 'x-bind:class', function xBindClass() {
+        if (this.active === id) {
+          return 'transform rotate-180';
+        }
+
+        return 'transform rotate-0';
+      });
+    },
+    focusNextHeader: function focusNextHeader(current) {
+      var index = this.headers.indexOf(current);
+
+      if (index === this.headers.length - 1) {
+        this.closestRoot().querySelector("[data-focus=\"".concat(this.headers[0], "\"]")).focus();
+      } else {
+        this.closestRoot().querySelector("[data-focus=\"".concat(this.headers[index + 1], "\"]")).focus();
+      }
+    },
+    focusPreviousHeader: function focusPreviousHeader(current) {
+      var index = this.headers.indexOf(current);
+
+      if (index === 0) {
+        this.closestRoot().querySelector("[data-focus=\"".concat(this.headers[this.headers.length - 1], "\"]")).focus();
+      } else {
+        this.closestRoot().querySelector("[data-focus=\"".concat(this.headers[index - 1], "\"]")).focus();
+      }
+    },
+    closestRoot: function closestRoot() {
+      return this.$el.closest('[data-accordion]');
+    },
+    toggle: function toggle(id) {
+      if (this.active === id) {
+        this.active = null;
+      } else {
+        this.active = id;
+      }
+    },
+    section: function section(id) {
+      var _ref3;
+
+      return _ref3 = {}, _defineProperty(_ref3, 'x-bind:id', function xBindId() {
+        return id;
+      }), _defineProperty(_ref3, 'x-bind:aria-labelledby', function xBindAriaLabelledby() {
+        return "accordion_header_".concat(id);
+      }), _defineProperty(_ref3, 'x-bind:role', function xBindRole() {
+        return 'region';
+      }), _defineProperty(_ref3, 'x-bind:hidden', function xBindHidden() {
+        return this.active !== id;
+      }), _defineProperty(_ref3, 'x-show', function xShow() {
+        return this.active === id;
+      }), _ref3;
+    }
+  };
+});
+window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__.default;
 alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.start();
 
 /***/ }),
