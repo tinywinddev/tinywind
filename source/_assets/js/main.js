@@ -14,4 +14,103 @@ Alpine.data('stars', () => ({
     }
 }))
 
+Alpine.data('accordion', () => ({
+    active: 'general',
+    headers: [],
+    init() {
+        this.$el.dataset.accordion = true
+    },
+    header: (id) => {
+        return {
+            ['x-bind:aria-expanded']() {
+                if (! this.headers.includes(id)) {
+                    this.headers.push(id)
+                }
+
+                return JSON.stringify(this.active === id)
+            },
+            ['x-bind:aria-controls']() {
+                return id
+            },
+            ['x-on:click.prevent']() {
+                this.toggle(id)
+            },
+            ['x-on:keydown.space.prevent']() {
+                this.toggle(id)
+            },
+            ['x-on:keydown.enter.prevent']() {
+                this.toggle(id)
+            },
+            ['x-on:keydown.arrow-up.prevent']() {
+                this.focusPreviousHeader(id)
+            },
+            ['x-on:keydown.arrow-down.prevent']() {
+                this.focusNextHeader(id)
+            },
+            ['x-bind:id']() {
+                return `accordion_header_${id}`
+            },
+            ['x-bind:data-focus']() {
+                return id
+            }
+        }
+    },
+    headerIcon: (id) => ({
+        ['x-bind:class']() {
+            if (this.active === id) {
+                return 'transform rotate-180'
+            }
+
+            return 'transform rotate-0'
+        }
+    }),
+    focusNextHeader(current) {
+        const index = this.headers.indexOf(current)
+
+        if (index === this.headers.length - 1) {
+            this.closestRoot().querySelector(`[data-focus="${this.headers[0]}"]`).focus()
+        } else {
+            this.closestRoot().querySelector(`[data-focus="${this.headers[index + 1]}"]`).focus()
+        }
+    },
+    focusPreviousHeader(current) {
+        const index = this.headers.indexOf(current)
+
+        if (index === 0) {
+            this.closestRoot().querySelector(`[data-focus="${this.headers[this.headers.length - 1]}"]`).focus()
+        } else {
+            this.closestRoot().querySelector(`[data-focus="${this.headers[index - 1]}"]`).focus()
+        }
+    },
+    closestRoot() {
+        return this.$el.closest('[data-accordion]')
+    },
+    toggle(id) {
+        if (this.active === id) {
+            this.active = null
+        } else {
+            this.active = id
+        }
+    },
+    section: (id) => ({
+        ['x-bind:id']() {
+            return id
+        },
+        ['x-bind:aria-labelledby']() {
+            return `accordion_header_${id}`
+        },
+        ['x-bind:role']() {
+            return 'region'
+        },
+        ['x-bind:hidden']() {
+            return this.active !== id
+        },
+        ['x-show']() {
+            return this.active === id
+        }
+    })
+}))
+
+window.Alpine = Alpine
+
 Alpine.start()

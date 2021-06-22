@@ -15,6 +15,9 @@ return [
     ],
 
     'components' => [
+        'Accordions' => [
+            'Basic' => 'accordions.basic'
+        ],
         'Alerts' => [
             'Basic with dismiss' => 'alerts.basic',
             'Information with icon' => 'alerts.info',
