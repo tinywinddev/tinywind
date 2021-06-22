@@ -1,7 +1,7 @@
-<div class="max-w-md py-4 pl-6 pr-8 border border-gray-200 rounded-md shadow-sm">
+<div class="max-w-md py-4 pl-6 pr-8 border border-gray-500 shadow-sm">
     <div class="flex items-end justify-between space-x-4">
         <div class="flex items-center space-x-4">
-            <div class="p-3 bg-blue-500 rounded-md">
+            <div class="p-3 bg-blue-500">
                 <svg fill="none" viewBox="0 0 24 24" class="w-6 h-6 text-white">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 12C19.25 13 17.5 18.25 12 18.25C6.5 18.25 4.75 13 4.75 12C4.75 11 6.5 5.75 12 5.75C17.5 5.75 19.25 11 19.25 12Z"></path>
                     <circle cx="12" cy="12" r="2.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>

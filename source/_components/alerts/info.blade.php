@@ -1,4 +1,4 @@
-<div class="p-4 border border-blue-200 rounded-md bg-blue-50">
+<div class="p-4 border border-blue-600 bg-blue-50">
     <div class="flex items-start space-x-3">
         <div class="flex-shrink-0">
             <!-- Iconic: information -->

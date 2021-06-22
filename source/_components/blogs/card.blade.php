@@ -1,4 +1,4 @@
-<div class="flex flex-col max-w-sm overflow-hidden border border-gray-200 rounded-md">
+<div class="flex flex-col max-w-sm overflow-hidden border border-gray-500">
     <div class="flex-shrink-0">
         <img
             src="https://i.picsum.photos/id/925/536/354.jpg?hmac=LOwNDNY01Usnn_7f-5NwaVkOcFMKNLAIF8Fym7uTiAg"
