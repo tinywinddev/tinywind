@@ -18,7 +18,7 @@
                 </svg>
             </div>
         </a>
-        <a href="/components" class="block">
+        <a href="/pages/changelog" class="block">
             <div class="flex items-center justify-between px-6 py-4 border border-gray-300 rounded-md hover:border-gray-500">
                 <h3 class="text-lg font-medium">Read the changelog</h3>
                 <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
