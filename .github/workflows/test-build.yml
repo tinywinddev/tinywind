@@ -1,0 +1,27 @@
+name: Test build
+
+on: [push, pull_request]
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    name: Test build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Cache Composer dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.composer/cache/files
+          key: composer-${{ hashFiles('composer.lock') }}
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: npm-${{ hashFiles('package-lock.json') }}
+      - name: Install Composer dependencies
+        run: composer install
+      - name: Install NPM dependencies
+        run: npm ci
+      - name: Test build
+        run: npm run prod
