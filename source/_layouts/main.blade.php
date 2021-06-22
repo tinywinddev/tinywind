@@ -26,7 +26,7 @@
                 <x-link href="/pages/changelog">Changelog</x-link>
             </nav>
 
-            <nav class="block space-y-2 md-hidden">
+            <nav class="block space-y-2 md:hidden">
                 <div class="space-x-4">
                     <x-link href="/pages/about">About</x-link>
                     <x-link href="/components">Components</x-link>
