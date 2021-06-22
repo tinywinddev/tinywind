@@ -42,6 +42,7 @@ return [
             'Optional' => 'inputs.optional',
             'Validation errors' => 'inputs.validation-errors',
             'Checkbox group' => 'inputs.checkbox',
+            'Radio group' => 'inputs.radio-group',
         ],
         'Maps' => false,
         'Stars' => [
