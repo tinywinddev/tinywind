@@ -41,7 +41,7 @@ return [
             'With help' => 'inputs.with-help',
             'Optional' => 'inputs.optional',
             'Validation errors' => 'inputs.validation-errors',
-            'Checkbox' => 'inputs.checkbox',
+            'Checkbox group' => 'inputs.checkbox',
         ],
         'Maps' => false,
         'Stars' => [
