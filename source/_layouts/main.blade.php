@@ -19,11 +19,22 @@
             </a>
             <p>A small collection of free Tailwind components.</p>
 
-            <nav class="flex items-center space-x-4">
+            <nav class="items-center hidden space-x-4 md:flex">
                 <x-link href="/pages/about">About</x-link>
                 <x-link href="/components">Components</x-link>
                 <x-link href="/pages/documentation">Documentation</x-link>
                 <x-link href="/pages/changelog">Changelog</x-link>
+            </nav>
+
+            <nav class="block space-y-2 md-hidden">
+                <div class="space-x-4">
+                    <x-link href="/pages/about">About</x-link>
+                    <x-link href="/components">Components</x-link>
+                </div>
+                <div class="space-x-4">
+                    <x-link href="/pages/documentation">Documentation</x-link>
+                    <x-link href="/pages/changelog">Changelog</x-link>
+                </div>
             </nav>
         </header>
 

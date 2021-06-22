@@ -4,7 +4,7 @@ return [
 
     'production' => false,
 
-    'baseUrl' => '',
+    'baseUrl' => 'http://tinywind.test',
 
     'title' => 'Tinywind',
 
