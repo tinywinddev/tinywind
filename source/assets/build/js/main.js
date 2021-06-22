@@ -3097,6 +3097,33 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.data('stars', function () {
     count: 1,
     setCount: function setCount(count) {
       this.count = count;
+    },
+    star: function star(i) {
+      var _ref;
+
+      return _ref = {}, _defineProperty(_ref, 'x-on:keydown.space.prevent', function xOnKeydownSpacePrevent() {
+        this.count = i;
+      }), _defineProperty(_ref, 'x-on:keydown.arrow-right.prevent', function xOnKeydownArrowRightPrevent() {
+        var next = this.$el.closest('[x-data="stars"]').querySelector("[data-star=\"".concat(i + 1, "\"]"));
+
+        if (!next) {
+          return;
+        }
+
+        next.focus();
+        this.count = next.dataset.star;
+      }), _defineProperty(_ref, 'x-on:keydown.arrow-left.prevent', function xOnKeydownArrowLeftPrevent() {
+        var previous = this.$el.closest('[x-data="stars"]').querySelector("[data-star=\"".concat(i - 1, "\"]"));
+
+        if (!previous) {
+          return;
+        }
+
+        previous.focus();
+        this.count = previous.dataset.star;
+      }), _defineProperty(_ref, 'x-bind:data-star', function xBindDataStar() {
+        return i;
+      }), _ref;
     }
   };
 });
@@ -3108,31 +3135,31 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.data('accordion', function () {
       this.$el.dataset.accordion = true;
     },
     header: function header(id) {
-      var _ref;
+      var _ref2;
 
-      return _ref = {}, _defineProperty(_ref, 'x-bind:aria-expanded', function xBindAriaExpanded() {
+      return _ref2 = {}, _defineProperty(_ref2, 'x-bind:aria-expanded', function xBindAriaExpanded() {
         if (!this.headers.includes(id)) {
           this.headers.push(id);
         }
 
         return JSON.stringify(this.active === id);
-      }), _defineProperty(_ref, 'x-bind:aria-controls', function xBindAriaControls() {
+      }), _defineProperty(_ref2, 'x-bind:aria-controls', function xBindAriaControls() {
         return id;
-      }), _defineProperty(_ref, 'x-on:click.prevent', function xOnClickPrevent() {
+      }), _defineProperty(_ref2, 'x-on:click.prevent', function xOnClickPrevent() {
         this.toggle(id);
-      }), _defineProperty(_ref, 'x-on:keydown.space.prevent', function xOnKeydownSpacePrevent() {
+      }), _defineProperty(_ref2, 'x-on:keydown.space.prevent', function xOnKeydownSpacePrevent() {
         this.toggle(id);
-      }), _defineProperty(_ref, 'x-on:keydown.enter.prevent', function xOnKeydownEnterPrevent() {
+      }), _defineProperty(_ref2, 'x-on:keydown.enter.prevent', function xOnKeydownEnterPrevent() {
         this.toggle(id);
-      }), _defineProperty(_ref, 'x-on:keydown.arrow-up.prevent', function xOnKeydownArrowUpPrevent() {
+      }), _defineProperty(_ref2, 'x-on:keydown.arrow-up.prevent', function xOnKeydownArrowUpPrevent() {
         this.focusPreviousHeader(id);
-      }), _defineProperty(_ref, 'x-on:keydown.arrow-down.prevent', function xOnKeydownArrowDownPrevent() {
+      }), _defineProperty(_ref2, 'x-on:keydown.arrow-down.prevent', function xOnKeydownArrowDownPrevent() {
         this.focusNextHeader(id);
-      }), _defineProperty(_ref, 'x-bind:id', function xBindId() {
+      }), _defineProperty(_ref2, 'x-bind:id', function xBindId() {
         return "accordion_header_".concat(id);
-      }), _defineProperty(_ref, 'x-bind:data-focus', function xBindDataFocus() {
+      }), _defineProperty(_ref2, 'x-bind:data-focus', function xBindDataFocus() {
         return id;
-      }), _ref;
+      }), _ref2;
     },
     headerIcon: function headerIcon(id) {
       return _defineProperty({}, 'x-bind:class', function xBindClass() {
@@ -3172,19 +3199,19 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.data('accordion', function () {
       }
     },
     section: function section(id) {
-      var _ref3;
+      var _ref4;
 
-      return _ref3 = {}, _defineProperty(_ref3, 'x-bind:id', function xBindId() {
+      return _ref4 = {}, _defineProperty(_ref4, 'x-bind:id', function xBindId() {
         return id;
-      }), _defineProperty(_ref3, 'x-bind:aria-labelledby', function xBindAriaLabelledby() {
+      }), _defineProperty(_ref4, 'x-bind:aria-labelledby', function xBindAriaLabelledby() {
         return "accordion_header_".concat(id);
-      }), _defineProperty(_ref3, 'x-bind:role', function xBindRole() {
+      }), _defineProperty(_ref4, 'x-bind:role', function xBindRole() {
         return 'region';
-      }), _defineProperty(_ref3, 'x-bind:hidden', function xBindHidden() {
+      }), _defineProperty(_ref4, 'x-bind:hidden', function xBindHidden() {
         return this.active !== id;
-      }), _defineProperty(_ref3, 'x-show', function xShow() {
+      }), _defineProperty(_ref4, 'x-show', function xShow() {
         return this.active === id;
-      }), _ref3;
+      }), _ref4;
     }
   };
 });
