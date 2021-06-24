@@ -7,7 +7,7 @@ $data = [
 ];
 @endphp
 
-<div class="max-w-full overflow-x-scroll">
+<div class="max-w-full">
     <table class="w-full whitespace-no-wrap bg-white border border-gray-200 divide-y divide-gray-200 rounded-md table-auto divide">
         <thead class="bg-gray-50">
             <tr>

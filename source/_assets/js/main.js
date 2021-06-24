@@ -11,7 +11,35 @@ Alpine.data('stars', () => ({
     count: 1,
     setCount(count) {
         this.count = count
-    }
+    },
+    star: (i) => ({
+        ['x-on:keydown.space.prevent']() {
+            this.count = i
+        },
+        ['x-on:keydown.arrow-right.prevent']() {
+            const next = this.$el.closest('[x-data="stars"]').querySelector(`[data-star="${i + 1}"]`)
+
+            if (! next) {
+                return
+            }
+
+            next.focus()
+            this.count = next.dataset.star
+        },
+        ['x-on:keydown.arrow-left.prevent']() {
+            const previous = this.$el.closest('[x-data="stars"]').querySelector(`[data-star="${i - 1}"]`)
+
+            if (! previous) {
+                return
+            }
+
+            previous.focus()
+            this.count = previous.dataset.star
+        },
+        ['x-bind:data-star']() {
+            return i
+        }
+    })
 }))
 
 Alpine.data('accordion', () => ({

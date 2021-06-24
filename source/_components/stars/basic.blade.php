@@ -3,7 +3,7 @@
     class="flex items-center space-x-2"
 >
     <template x-for="i in 5">
-        <button type="button" x-on:click="setCount(i)" class="m-0 focus:outline-none">
+        <button x-bind="star(i)" type="button" x-on:click="setCount(i)" class="m-0 focus:outline-black">
             <svg
                 class="w-8 h-8 mx-1 fill-current"
                 x-bind:class="{ 'text-yellow-500': count >= i, 'text-gray-100 hover:text-gray-200': count < i }"
