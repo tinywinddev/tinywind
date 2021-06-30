@@ -9,15 +9,15 @@
         </svg>
     </div>
 
-    <h3 class="text-lg font-medium">
-        You don't have any projects.
-    </h3>
+    <div class="space-y-2 text-center">
+        <h3 class="text-lg font-medium">
+            You don't have any projects.
+        </h3>
 
-    <div class="space-y-4 text-center">
         <p class="text-sm text-gray-500">Projects are at the core of Todo. When you have created your first one, it will appear here.</p>
-
-        <button type="button" class="px-4 py-1 text-sm font-medium text-center text-white bg-blue-600 border border-transparent shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-            Create a project
-        </button>
     </div>
+
+    <button type="button" class="px-4 py-1 text-sm font-medium text-center text-white bg-blue-600 border border-transparent shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+        Create a project
+    </button>
 </div>
