@@ -1,5 +1,5 @@
 <div class="flex flex-col items-center max-w-md px-24 py-12 space-y-4 border border-gray-300 shadow-sm">
-    <div class="p-2 bg-blue-200 border border-blue-300 rounded-full w-max">
+    <div class="p-2 rounded-full bg-blue-50 w-max">
         <svg fill="none" viewBox="0 0 24 24" class="w-8 h-8 text-blue-600">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.75 8L12 4.75L19.25 8L12 11.25L4.75 8Z"></path>
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.75 16L12 19.25L19.25 16"></path>
