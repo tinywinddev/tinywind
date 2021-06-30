@@ -1,5 +1,11 @@
 ## Changelog
 
+### v0.4.0 - 2021-0X-XX
+
+#### Added
+
+* Added a new [Empty states](/components/empty-states) set.
+
 ### v0.3.0 - 2021-06-24
 
 #### Added
