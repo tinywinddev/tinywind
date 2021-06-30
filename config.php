@@ -39,6 +39,7 @@ return [
         'Empty states' => [
             'Basic' => 'empty-states.basic',
             'List' => 'empty-states.list',
+            'Minimal' => 'empty-states.minimal',
         ],
         'Inputs' => [
             'Basic' => 'inputs.basic',

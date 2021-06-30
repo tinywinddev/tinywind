@@ -14,7 +14,7 @@
             You don't have any projects.
         </h3>
 
-        <p class="text-sm text-gray-500">Projects are at the core of Todo. When you have created your first one, it will appear here.</p>
+        <p class="text-sm text-gray-500">Projects are at the core of Todo. Once you have created your first one, it will appear here.</p>
     </div>
 
     <button type="button" class="px-4 py-1 text-sm font-medium text-center text-white bg-blue-600 border border-transparent shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
