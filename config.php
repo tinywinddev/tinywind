@@ -36,6 +36,11 @@ return [
         'Blog posts' => [
             'Card' => 'blogs.card',
         ],
+        'Empty states' => [
+            'Basic' => 'empty-states.basic',
+            'List' => 'empty-states.list',
+            'Minimal' => 'empty-states.minimal',
+        ],
         'Inputs' => [
             'Basic' => 'inputs.basic',
             'With help' => 'inputs.with-help',
