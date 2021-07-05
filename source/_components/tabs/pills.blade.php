@@ -34,7 +34,7 @@
                 'text-gray-600 hover:text-gray-800': active !== 'address',
             }"
             x-bind:aria-current="active === 'address' ? 'page' : false"
-            class="px-3 py-2 text-sm font-medium rounded-md focus:outline-black"
+            class="px-3 py-2 text-sm font-medium focus:outline-black"
         >
             Address
         </a>
@@ -47,7 +47,7 @@
                 'text-gray-600 hover:text-gray-800': active !== 'payment',
             }"
             x-bind:aria-current="active === 'payment' ? 'page' : false"
-            class="px-3 py-2 text-sm font-medium bg-gray-200 rounded-md focus:outline-black"
+            class="px-3 py-2 text-sm font-medium bg-gray-200 focus:outline-black"
         >
             Payment
         </a>
@@ -60,7 +60,7 @@
                 'text-gray-600 hover:text-gray-800': active !== 'settings',
             }"
             x-bind:aria-current="active === 'settings' ? 'page' : false"
-            class="px-3 py-2 text-sm font-medium rounded-md focus:outline-black"
+            class="px-3 py-2 text-sm font-medium focus:outline-black"
         >
             Settings
         </a>
