@@ -1,4 +1,4 @@
-<div class="max-w-md py-4 pl-6 pr-8 border border-gray-500 shadow-sm">
+<div class="max-w-md py-4 pl-6 pr-8 border border-gray-300 shadow-sm">
     <div class="flex items-end justify-between space-x-4">
         <div class="flex items-center space-x-4">
             <div class="p-3 bg-blue-500">

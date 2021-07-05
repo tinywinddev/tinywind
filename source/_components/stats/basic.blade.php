@@ -1,4 +1,4 @@
-<div class="max-w-sm py-4 pl-6 pr-8 space-y-3 border border-gray-500 shadow-sm">
+<div class="max-w-sm py-4 pl-6 pr-8 space-y-3 border border-gray-300 shadow-sm">
     <div class="space-y-2">
         <p class="font-medium text-gray-700">
             Number of Views

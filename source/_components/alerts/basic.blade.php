@@ -1,4 +1,4 @@
-<div class="p-4 border border-gray-500 bg-gray-50">
+<div class="p-4 border border-gray-300 bg-gray-50">
     <div class="flex items-start justify-between">
         <p class="text-sm font-medium text-gray-800">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit...
