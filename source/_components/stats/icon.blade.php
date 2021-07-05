@@ -11,7 +11,7 @@
                 <p class="text-sm font-medium text-gray-700">
                     Number of Views
                 </p>
-                <p class="block text-3xl font-semibold text-gray-900">86,400</p>
+                <p class="block font-mono text-2xl font-medium text-gray-900 tabular-nums">86,400</p>
             </div>
         </div>
         <div class="flex items-end space-x-1 font-bold text-red-500">
