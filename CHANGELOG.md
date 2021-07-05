@@ -10,6 +10,10 @@
 
 * Fixed mobile / responsive styling for various components.
 
+#### Changed
+
+* Changed statistics to use `tabular-nums` and `font-mono` for numeric values.
+
 ### v0.3.0 - 2021-06-24
 
 #### Added
