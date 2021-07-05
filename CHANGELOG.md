@@ -13,6 +13,7 @@
 #### Changed
 
 * Changed statistics to use `tabular-nums` and `font-mono` for numeric values.
+* Reduced border colour from `gray-500` to `gray-300` as it was too harsh.
 
 ### v0.3.0 - 2021-06-24
 
