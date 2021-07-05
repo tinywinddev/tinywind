@@ -1,4 +1,4 @@
-<div class="w-1/2 space-y-2">
+<div class="max-w-md space-y-2">
     <div class="flex items-center justify-between">
         <label
             for="name"

@@ -1,4 +1,4 @@
-<div class="space-y-2">
+<div class="max-w-md space-y-2">
     <div class="space-y-1">
         <label
             for="email"
@@ -12,7 +12,7 @@
         type="text"
         name="email"
         id="email"
-        class="w-1/2 outline-none focus:outline-black focus:shadow-none focus:ring-0"
+        class="w-full outline-none focus:outline-black focus:shadow-none focus:ring-0"
         aria-required="true"
         aria-describedby="email-help"
         required

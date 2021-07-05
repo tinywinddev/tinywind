@@ -1,4 +1,4 @@
-<div class="flex flex-col max-w-sm overflow-hidden border border-gray-500">
+<div class="flex flex-col max-w-sm overflow-hidden border border-gray-300">
     <div class="flex-shrink-0">
         <img
             src="https://i.picsum.photos/id/925/536/354.jpg?hmac=LOwNDNY01Usnn_7f-5NwaVkOcFMKNLAIF8Fym7uTiAg"
@@ -19,13 +19,14 @@
                 arcu ultrices, mattis metus et, aliquam nisl.
             </p>
         </div>
-        <div class="flex items-center px-6 py-4 space-x-4 bg-gray-50">
+        <div class="flex items-center px-6 py-4 md:space-x-4 bg-gray-50">
             <img
                 alt=""
                 src="https://thispersondoesnotexist.com/image"
-                class="object-cover w-16 h-16 rounded-full "
+                class="hidden object-cover w-16 h-16 rounded-full md:block"
             />
-            <div class="space-y-1">
+            
+            <div class="flex items-center justify-between w-full space-y-1 md:block">
                 <p class="font-medium">Ryan Chandler</p>
                 <p class="text-sm text-gray-600 uppercase">May 27, 2021</p>
             </div>
