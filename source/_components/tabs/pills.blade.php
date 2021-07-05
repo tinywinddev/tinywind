@@ -1,5 +1,5 @@
-<div x-data="tabs" class="w-max">
-    <div class="md:hidden">
+<div x-data="tabs" class="w-full">
+    <div class="sm:hidden">
         <label for="tabs" class="sr-only">Choose a tab</label>
         <select name="tabs" id="tabs" class="w-full" x-model="active">
             <option value="information">Information</option>
@@ -8,8 +8,9 @@
             <option value="settings">Settings</option>
         </select>
     </div>
+    
     <nav
-        class="hidden p-2 space-x-4 bg-gray-100 bg-opacity-75 md:flex"
+        class="hidden p-2 space-x-4 bg-gray-100 bg-opacity-75 sm:flex"
         aria-label="Tabs"
     >
         <!-- Active: "text-gray-800 bg-gray-200", Inactive: "text-gray-600 hover:text-gray-800" -->
