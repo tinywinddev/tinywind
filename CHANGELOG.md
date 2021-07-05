@@ -1,5 +1,20 @@
 ## Changelog
 
+### v0.4.0 - 2021-0X-XX
+
+#### Added
+
+* Added a new [Empty states](/components/empty-states) set.
+
+#### Fixed
+
+* Fixed mobile / responsive styling for various components.
+
+#### Changed
+
+* Changed statistics to use `tabular-nums` and `font-mono` for numeric values.
+* Reduced border colour from `gray-500` to `gray-300` as it was too harsh.
+
 ### v0.3.0 - 2021-06-24
 
 #### Added

@@ -1,4 +1,4 @@
-<div x-data="accordion" class="max-w-md border border-gray-500 divide-y divide-gray-500">
+<div x-data="accordion" class="max-w-md border border-gray-300 divide-y divide-gray-300">
     <h3 class="text-lg">
         <button x-bind="header('general')" class="flex items-center justify-between w-full px-4 py-2 font-medium focus:outline-black focus:border-blue-600">
             <span>General</span>
