@@ -6,6 +6,10 @@
 
 * Added a new [Empty states](/components/empty-states) set.
 
+#### Fixed
+
+* Fixed mobile / responsive styling for various components.
+
 ### v0.3.0 - 2021-06-24
 
 #### Added
