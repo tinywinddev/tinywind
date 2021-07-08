@@ -1,5 +1,11 @@
 ## Changelog
 
+### v0.5.0 - 2021-0X-0X
+
+#### Added
+
+* Added a new [Badges](/components/badges) set.
+
 ### v0.4.0 - 2021-07-05
 
 #### Added
