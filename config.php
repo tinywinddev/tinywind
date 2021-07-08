@@ -60,7 +60,9 @@ return [
             'Checkbox group' => 'inputs.checkbox',
             'Radio group' => 'inputs.radio-group',
         ],
-        'Maps' => false,
+        'List groups' => [
+            'Basic' => 'list-groups.basic'
+        ],
         'Stars' => [
             'Basic' => 'stars.basic',
         ],
