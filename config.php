@@ -25,6 +25,7 @@ return [
         'Avatars' => [
             'Basic' => 'avatars.basic',
             'Activity indicator' => 'avatars.activity',
+            'Gradient indicator' => 'avatars.gradient',
         ],
         'Badges' => [
             'Basic' => 'badges.basic',
