@@ -1,5 +1,13 @@
 ## Changelog
 
+### v0.5.0 - 2021-0X-0X
+
+#### Added
+
+* Added a new [Badges](/components/badges) set.
+* Added a new [Dividers](/components/dividers) set.
+* Added a new [List groups](/components/list-groups) set.
+
 ### v0.4.0 - 2021-07-05
 
 #### Added

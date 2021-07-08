@@ -26,6 +26,12 @@ return [
             'Basic' => 'avatars.basic',
             'Activity indicator' => 'avatars.activity',
         ],
+        'Badges' => [
+            'Basic' => 'badges.basic',
+            'Pills' => 'badges.pills',
+            'Small' => 'badges.small',
+            'Small pills' => 'badges.small-pills',
+        ],
         'Buttons' => [
             'Solid' => 'buttons.solid',
             'Outline' => 'buttons.outline',
@@ -35,6 +41,11 @@ return [
         ],
         'Blog posts' => [
             'Card' => 'blogs.card',
+        ],
+        'Dividers' => [
+            'With heading' => 'dividers.heading',
+            'With button' => 'dividers.button',
+            'With badge' => 'dividers.badge',
         ],
         'Empty states' => [
             'Basic' => 'empty-states.basic',
@@ -49,7 +60,9 @@ return [
             'Checkbox group' => 'inputs.checkbox',
             'Radio group' => 'inputs.radio-group',
         ],
-        'Maps' => false,
+        'List groups' => [
+            'Basic' => 'list-groups.basic'
+        ],
         'Stars' => [
             'Basic' => 'stars.basic',
         ],
