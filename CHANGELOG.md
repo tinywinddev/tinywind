@@ -5,6 +5,7 @@
 #### Added
 
 * Added a new [Badges](/components/badges) set.
+* Added a new [Dividers](/components/dividers) set.
 
 ### v0.4.0 - 2021-07-05
 
