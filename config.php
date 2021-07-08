@@ -26,6 +26,12 @@ return [
             'Basic' => 'avatars.basic',
             'Activity indicator' => 'avatars.activity',
         ],
+        'Badges' => [
+            'Basic' => 'badges.basic',
+            'Pills' => 'badges.pills',
+            'Small' => 'badges.small',
+            'Small pills' => 'badges.small-pills',
+        ],
         'Buttons' => [
             'Solid' => 'buttons.solid',
             'Outline' => 'buttons.outline',
