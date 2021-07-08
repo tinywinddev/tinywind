@@ -42,6 +42,11 @@ return [
         'Blog posts' => [
             'Card' => 'blogs.card',
         ],
+        'Dividers' => [
+            'With heading' => 'dividers.heading',
+            'With button' => 'dividers.button',
+            'With badge' => 'dividers.badge',
+        ],
         'Empty states' => [
             'Basic' => 'empty-states.basic',
             'List' => 'empty-states.list',
