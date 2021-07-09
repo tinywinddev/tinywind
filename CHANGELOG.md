@@ -1,5 +1,11 @@
 ## Changelog
 
+### v0.6.0 - 2021-0X-0X
+
+#### Added
+
+* Added a new [gradient indicator avatar](/components/avatars/).
+
 ### v0.5.0 - 2021-07-08
 
 #### Added
